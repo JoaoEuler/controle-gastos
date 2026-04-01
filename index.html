@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Gastos</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Controle de Gastos</h2>
+    <div class="container">
+        <h4>Saldo</h4>
+        <h1 id="saldo">$0.00</h1>
+
+        <div class="inc_exp-container">
+            <div>
+                <h4>Valor Creditado</h4>
+                <p id="add-dinheiro" class="add-dinheiro">+$0.00</p>
+            </div>
+            <div>
+                <h4>Valor Debitado</h4>
+                <p id="remov-dinheiro" class="remov-dinheiro">-$0.00</p>
+            </div>
+        </div>
+
+        <h3>Nova Transação</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Motivação</label>
+                <input type="text" id="text" placeholder="Insira a motivação da transação">
+            </div>
+            <div class="form-control">
+                <label for="ganho-text">Valor Creditado</label>
+                <input type="number" id="ganho-text" placeholder="Insira o valor a ser creditado">
+            </div>
+            <div class="form-control">
+                <label for="gasto-text">Valor Debitado</label>
+                <input type="number" id="gasto-text" placeholder="Insira o valor a ser debitado">
+            </div>
+
+            <h3>Transações</h3>
+            <ul id="list" class="list">
+                <!-- <li class = "gasto">
+                    Dinheiro <span>-$400</span><button class = "delete-button">x</button>
+                </li> -->
+            </ul>
+            <button class="button">Nova Transação</button>
+
+            <button onclick="resetarTransacoes()" class="button">
+                Resetar Tudo
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
