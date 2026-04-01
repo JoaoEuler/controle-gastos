@@ -27,7 +27,3 @@ Tecnologias Utilizadas:
 -CSS3
 
 -LocalStorage
-
-
-
-![Tela do Controle de Gastos]([https://link-da-imagem-online.png](https://github.com/JoaoEuler/controle-gastos/blob/main/imagem_2026-04-01_172759516.png))
